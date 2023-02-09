@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="Login Page.css">
+      <script src="{{url_for('static',filename='css/jquery.js')}}"></script>
+      <link rel="stylesheet" href="{{url_for('static',filename='css/Login Page.css')}}">
+      <script src="{{url_for('static',filename='css/jquery-ui.js')}}"></script>
+   </head>
+
+   <body>
+      <section class="title">
+      <h1>Login</h1>
+      </section>
+
+      <form action="action_page.php" method="post">
+  
+
+       <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" id="submit">Login</button>
+          <button type="submit" id="signUp">Sign Up</button>
+
+          <br><br>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+       </div>
+
+       <section>
+        <button class="googleLogin" style="margin-left: 14px;">Login with Google</button>
+       </section>
+
+       <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+       </div>
+     </form>
+
+     
+     <script>
+        $(document).ready(function(){
+          $("#submit").button();
+          $("#signUp").button();
+          $(".cancelbtn").button();
+          $(".googleLogin").button();     
+        });
+     </script>
+   </body>
+
+</html>
