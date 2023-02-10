@@ -1,0 +1,28 @@
+.review{
+    float: left;
+    padding-left: 5%; 
+    padding-top: 3%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    color: orangered;
+    font-family: sans-serif;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 10%;
+    
+}
+
+.title{
+    max-width: 100%;
+    border-style: outset;
+    border-color: orangered;
+    border-radius: 2%;
+    padding-left: 5%;
+   background-color: orange;
+}
+
+h1{
+    font-size: xxx-large;
+    font-family: sans-serif;
+}
+
